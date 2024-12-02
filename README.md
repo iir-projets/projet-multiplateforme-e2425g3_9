@@ -83,7 +83,6 @@ lib/
 - *Basma Boukhal*
 - *Haytam Aatita*
 - *Ahmad Warid*
-  Étudiante en MIAGE et développeuse principale du projet.  
 
 Pour toute suggestion ou contribution, veuillez contacter :  
 📧 *rimbelabadia1234@gmail.com*  
