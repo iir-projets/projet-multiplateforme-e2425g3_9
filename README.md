@@ -40,17 +40,17 @@ Library Management App est une application mobile développée avec *Flutter* po
 
 ## 📦 *Installation*  
 1. Clonez ce dépôt sur votre machine locale :  
-   bash  
-   git clone https://github.com/nom-utilisateur/library-management-app.git  
+   
+   git clone --
      
 
 2. Installez les dépendances nécessaires :  
-   bash  
+   
    flutter pub get  
      
 
 3. Lancez l'application sur un émulateur ou un appareil physique :  
-   bash  
+     
    flutter run  
      
 
