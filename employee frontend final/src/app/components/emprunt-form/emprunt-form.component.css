@@ -1,0 +1,87 @@
+/* Conteneur principal */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa; /* Couleur de fond claire */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Titre */
+h2 {
+  text-align: center;
+  color: #343a40; /* Gris foncé */
+  margin-bottom: 20px;
+}
+
+/* Formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Champs du formulaire */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #495057; /* Gris neutre */
+}
+
+.form-control {
+  border: 1px solid #ced4da; /* Bordure grise légère */
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Message d'erreur */
+.text-danger {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  color: #e74c3c; /* Rouge vif */
+}
+
+/* Bouton */
+button {
+  background-color: #007bff; /* Bleu */
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #6c757d; /* Gris désactivé */
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3; /* Bleu foncé */
+}
+
+/* Alertes de succès et d'erreur */
+.alert {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.alert-success {
+  background-color: #d4edda; /* Vert clair */
+  color: #155724; /* Vert foncé */
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da; /* Rouge clair */
+  color: #721c24; /* Rouge foncé */
+  border: 1px solid #f5c6cb;
+}

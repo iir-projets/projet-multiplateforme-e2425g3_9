@@ -1,0 +1,152 @@
+<br /><br />
+<br /><br />
+<!-- <a routerLink="/show-all-employees" class="btn btn-primary">Go somewhere</a> -->
+<div class="container-sm">
+  <div class="col-md-6 offset-md-3 container-sm">
+    <form
+      #f="ngForm"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      class="row g-3 form-container container-sm"
+    >
+      <div class="form-group">
+        <label><b>First Name</b></label>
+        <input
+          type="text"
+          class="form-control"
+          id="fname"
+          [(ngModel)]="employee.fname"
+          name="fname"
+          required
+          minlength="3"
+          #fname="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && fname.errors }"
+        />
+
+        <div *ngIf="f.submitted && fname.errors" class="invalid-feedback">
+          <div *ngIf="fname.errors['required']">First name is required</div>
+          <div *ngIf="fname.errors['minlength']">
+            First Name minimum 3 characters are required!!!
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="form-group">
+        <label><b>Email Id</b></label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          [(ngModel)]="employee.email"
+          name="email"
+          required
+          email
+          #email="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
+        />
+        <div *ngIf="f.submitted && email.errors" class="invalid-feedback">
+          <div *ngIf="email.errors['required']">Email is required</div>
+          <div *ngIf="email.invalid">Invalid email format</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <!-- <button (click)="toggleData()"> Choose Date </button>
+                <div *ngIf = "showVariable">
+                <ngb-datepicker #dp name = "joiningDate"[(ngModel)]="model" (navigate)="date = $event.next" />
+                <pre>Month: {{ date.month }}.{{ date.year }}</pre>
+                <pre>Model: {{ model | json }}</pre>
+
+            </div> -->
+
+        <label><b>Joining Date</b></label>
+        <input
+          type="date"
+          class="form-control"
+          id="joiningDate"
+          [(ngModel)]="employee.joiningDate"
+          name="joiningDate"
+          required
+          #joiningDate="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && joiningDate.errors }"
+        />
+
+        <div *ngIf="f.submitted && joiningDate.errors" class="invalid-feedback">
+          <div *ngIf="joiningDate.errors['required']">
+            Joining Date is required
+          </div>
+        </div>
+
+        <!-- <mat-form-field>
+                        <label><b>Joining Date</b></label>
+                        <input matInput [matDatepicker]="picker"  class="form-control" id="joiningDate" [(ngModel)]="employee.joiningDate"
+                            name="joiningDate" required #joiningDate="ngModel"
+                            [ngClass]="{ 'is-invalid': f.submitted && joiningDate.errors }">
+        
+                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+        
+                        <div *ngIf="f.submitted && joiningDate.errors" class="invalid-feedback">
+                            <div *ngIf="joiningDate.errors['required']">Joining Date is required</div>
+                        </div>
+        
+                    </mat-form-field> -->
+      </div>
+
+      <br /><br />
+
+      <div class="form-group">
+        <label><b>Pasword</b></label>
+        <input
+          type="password"
+          class="form-control"
+          id="lname"
+          [(ngModel)]="employee.lname"
+          required
+          name="lname"
+          #lname="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && lname.errors }"
+        />
+
+        <div *ngIf="f.submitted && lname.errors" class="invalid-feedback">
+          <div *ngIf="lname.errors['required']">Password is required</div>
+        </div>
+      </div>
+
+      <br /><br />
+      <div class="form-group">
+        <label><b>confirm password</b></label>
+        <input type="password" class="form-control" id="passwordconf" />
+      </div>
+      <br /><br /><br /><br />
+
+      <div class="form-group col-md-6">
+        <button
+          class="btn btn-success full-width-button"
+          type="submit"
+          id="reg"
+          [disabled]=""
+        >
+          Submit
+        </button>
+      </div>
+
+      <div class="col-md-6">
+        <button
+          type="button"
+          (click)="goToEmployeeList()"
+          class="btn btn-danger full-width-button"
+        >
+          Cancel
+        </button>
+      </div>
+    </form>
+
+    <!-- 
+<ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next" />
+<pre>Month: {{ date.month }}.{{ date.year }}</pre>
+<pre>Model: {{ model | json }}</pre>
+
+<br><br><br><br> -->
+  </div>
+</div>

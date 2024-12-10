@@ -1,0 +1,47 @@
+<div class="container mt-4">
+  <h2>Ajouter un Emprunt</h2>
+  <form [formGroup]="empruntForm" (ngSubmit)="onSubmit()">
+    <!-- Nom du Livre -->
+    <div class="form-group mb-3">
+      <label for="nomLivre">Nom du Livre</label>
+      <input type="text" id="nomLivre" class="form-control" formControlName="nomLivre" />
+      <div *ngIf="empruntForm.get('nomLivre')?.invalid && empruntForm.get('nomLivre')?.touched" class="text-danger">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <!-- Nom Complet de l'Utilisateur -->
+    <div class="form-group mb-3">
+      <label for="fullName">Nom Complet</label>
+      <input type="text" id="fullName" class="form-control" formControlName="fullName" />
+      <div *ngIf="empruntForm.get('fullName')?.invalid && empruntForm.get('fullName')?.touched" class="text-danger">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <!-- Date d'Acquisition -->
+    <div class="form-group mb-3">
+      <label for="dateAcquisition">Date d'Acquisition</label>
+      <input type="date" id="dateAcquisition" class="form-control" formControlName="dateAcquisition" />
+      <div *ngIf="empruntForm.get('dateAcquisition')?.invalid && empruntForm.get('dateAcquisition')?.touched" class="text-danger">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <!-- Date de Retour -->
+    <div class="form-group mb-3">
+      <label for="dateRetour">Date de Retour</label>
+      <input type="date" id="dateRetour" class="form-control" formControlName="dateRetour" />
+      <div *ngIf="empruntForm.get('dateRetour')?.invalid && empruntForm.get('dateRetour')?.touched" class="text-danger">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <!-- Messages de succès/erreur -->
+    <div class="form-group mt-3">
+      <button type="submit" class="btn btn-primary" [disabled]="empruntForm.invalid">Ajouter</button>
+    </div>
+    <div *ngIf="successMessage" class="alert alert-success mt-3">{{ successMessage }}</div>
+    <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}</div>
+  </form>
+</div>

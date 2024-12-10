@@ -1,0 +1,22 @@
+<div *ngIf="emprunts.length === 0">
+  <p>Aucun emprunt trouvé.</p>
+</div>
+
+<table *ngIf="emprunts.length > 0" class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Nom du livre</th>
+      <th>Date d'acquisition</th>
+      <th>Date de retour</th>
+      <th>État</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emprunt of emprunts">
+      <td>{{ emprunt.nomLivre }}</td>
+      <td>{{ emprunt.dateAcquisition }}</td>
+      <td>{{ emprunt.dateRetour  }}</td>
+      <td>{{ emprunt.etat }}</td>
+    </tr>
+  </tbody>
+</table>
