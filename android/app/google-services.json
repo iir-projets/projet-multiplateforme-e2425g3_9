@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "65511654512",
+    "project_id": "testing1-5c50b",
+    "storage_bucket": "testing1-5c50b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65511654512:android:9b457165d6174af75a60b5",
+        "android_client_info": {
+          "package_name": "com.example.elmouaddibe_examen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA87XMur30LgyAbx8hxBFfYbmNR03Ct0Ug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
