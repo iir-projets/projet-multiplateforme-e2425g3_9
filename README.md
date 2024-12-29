@@ -17,16 +17,11 @@ https://github.com/user-attachments/assets/5453b0cf-3b58-41c7-ab1a-052904343047
 
 ## 🛠 *Fonctionnalités*  
 ### *Pour les utilisateurs :*  
-- Consultation des livres disponibles avec leurs détails (titre, auteur, disponibilité).  
-- Recherche et filtrage des livres par catégorie, auteur, ou titre.  
+- Consultation des livres disponibles avec leurs détails (titre, auteur, disponibilité).
+- ChatBot qui répond à tout les questions.
 - Emprunt et retour de livres.  
 - Historique des emprunts.  
-
-### *Pour les bibliothécaires :*  
-- Ajout, modification et suppression des livres.  
-- Gestion des quantités et des stocks.  
-- Notifications pour les emprunts en retard.  
-
+ 
 ---
 
 ## 🚀 *Technologies utilisées*  
