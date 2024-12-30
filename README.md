@@ -53,19 +53,6 @@ https://github.com/user-attachments/assets/5453b0cf-3b58-41c7-ab1a-052904343047
 
 ---
 
-## 📋 *Structure du projet*  
-Voici une vue simplifiée de l’architecture du projet :  
-
-lib/  
-├── models/         # Classes pour les modèles de données (Livre, Utilisateur, etc.).  
-├── screens/        # Écrans principaux (Accueil, Catalogue, Emprunts).  
-├── services/       # Services pour Firebase ou les appels API REST.  
-├── widgets/        # Widgets réutilisables (boutons, cartes, etc.).  
-└── main.dart       # Point d’entrée de l’application.  
-  
-
----
-
 ## 🗂 *Fonctionnalités futures*  
 - Gestion des rôles avancée (ex : administrateurs).  
 - Notifications push pour les rappels d’emprunts.  
