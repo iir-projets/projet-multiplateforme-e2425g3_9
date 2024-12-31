@@ -21,7 +21,8 @@ Library Management App est une application mobile développée avec *Flutter* po
 ![sidebar](https://github.com/user-attachments/assets/588c784c-c374-4507-bc99-468e0504d74c)
 
 ## L'assitant IA
-![assistanr](https://github.com/user-attachments/assets/014c001a-f7f3-4cf1-8f57-83669c872ef4)
+![WhatsApp Image 2024-12-31 à 15 06 27_6b57667e](https://github.com/user-attachments/assets/39a8a9bb-dff4-42cc-b8bf-71ca5120a9da)
+
 
 
 ## Bibliothéque 
