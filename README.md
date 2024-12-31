@@ -47,7 +47,7 @@ Library Management App est une application mobile développée avec *Flutter* po
 
 ## 🛠 *Fonctionnalités*  
 ### *Pour les utilisateurs :*  
-- Consultation des livres disponibles avec leurs détails (titre, auteur, disponibilité).
+- Consultation des livres disponibles avec leurs détails (titre, auteur, disponibilité, commentaire des autres users).
 - ChatBot qui répond à tout les questions.
 - Emprunt et retour de livres.  
 - Historique des emprunts.  
@@ -61,7 +61,6 @@ Library Management App est une application mobile développée avec *Flutter* po
 
 ### *Backend :*  
 - Firebase pour l’authentification et la base de données.  
-- Intégration des services REST (optionnel).  
 
 ---
 
@@ -86,7 +85,6 @@ Library Management App est une application mobile développée avec *Flutter* po
 ## 🗂 *Fonctionnalités futures*  
 - Gestion des rôles avancée (ex : administrateurs).  
 - Notifications push pour les rappels d’emprunts.  
-- Multilingue (anglais, français, etc.).  
 - Mode hors ligne avec synchronisation automatique.  
 
 ---
