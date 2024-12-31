@@ -1,4 +1,4 @@
-# *Library Management App*  
+# *Library Management App - The Infinite Shelf*  
 
 ## 📚 *Description*  
 Library Management App est une application mobile développée avec *Flutter* pour gérer les opérations courantes d'une bibliothèque, telles que :  
@@ -6,7 +6,7 @@ Library Management App est une application mobile développée avec *Flutter* po
 - La gestion des utilisateurs (emprunts, retours).  
 - La recherche et le filtrage des livres disponibles.  
 
-[Captures d'éran de l'ensemble de l'application]
+# Captures d'éran de l'ensemble de l'application :
 
 ## Se connecter
 ![signin](https://github.com/user-attachments/assets/3126a9ae-158d-4323-8f43-7d70bc90eea1)
