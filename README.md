@@ -48,6 +48,8 @@ Library Management App est une application mobile développée avec *Flutter* po
 ## 🛠 *Fonctionnalités*  
 ### *Pour les utilisateurs :*  
 - Consultation des livres disponibles avec leurs détails (titre, auteur, disponibilité, commentaire des autres users).
+- Recherche des livres par leurs titres ou auteurs.
+- Laisser des commentaires.
 - ChatBot qui répond à tout les questions.
 - Emprunt et retour de livres.  
 - Historique des emprunts.  
